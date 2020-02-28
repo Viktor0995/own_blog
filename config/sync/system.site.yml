@@ -1,0 +1,14 @@
+uuid: 5880b2b0-b3e7-440e-b6be-78f57409fd51
+name: 'Own blog'
+mail: example@mail.com
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /node
+admin_compact_mode: false
+weight_select_max: 100
+langcode: en
+default_langcode: en
+_core:
+  default_config_hash: yTxtFqBHnEWxQswuWvkjE8mKw2t8oKuCL1q8KnfHuGE

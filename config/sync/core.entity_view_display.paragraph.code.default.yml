@@ -1,0 +1,38 @@
+uuid: f7621b00-0595-4d2a-bd4e-438344268641
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.code.field_body
+    - field.field.paragraph.code.field_title
+    - paragraphs.paragraphs_type.code
+  module:
+    - field_layout
+    - layout_discovery
+    - text
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
+id: paragraph.code.default
+targetEntityType: paragraph
+bundle: code
+mode: default
+content:
+  field_body:
+    weight: 1
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_title:
+    weight: 0
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden: {  }

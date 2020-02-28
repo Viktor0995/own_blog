@@ -1,0 +1,28 @@
+uuid: 57fa5d8f-4bb6-4a17-b30c-a839ac2f39ff
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_attachment
+    - media.type.document
+    - node.type.blog_article
+id: node.blog_article.field_attachment
+field_name: field_attachment
+entity_type: node
+bundle: blog_article
+label: Attachment
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      document: document
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

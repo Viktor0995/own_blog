@@ -1,0 +1,39 @@
+uuid: a698b36d-3b68-43c1-b0a9-a0676e73063c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.youtube_gallery.field_title
+    - field.field.paragraph.youtube_gallery.field_youtubes_
+    - paragraphs.paragraphs_type.youtube_gallery
+  module:
+    - field_layout
+    - layout_discovery
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
+id: paragraph.youtube_gallery.default
+targetEntityType: paragraph
+bundle: youtube_gallery
+mode: default
+content:
+  field_title:
+    weight: 0
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_youtubes_:
+    type: entity_reference_entity_view
+    weight: 1
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+hidden: {  }

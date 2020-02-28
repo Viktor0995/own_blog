@@ -1,0 +1,40 @@
+uuid: ddf7ba38-042c-4781-ad27-61bd9bef1d0b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.youtube.field_title
+    - field.field.paragraph.youtube.field_youtube
+    - paragraphs.paragraphs_type.youtube
+  module:
+    - field_layout
+    - layout_discovery
+    - media_library
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
+id: paragraph.youtube.default
+targetEntityType: paragraph
+bundle: youtube
+mode: default
+content:
+  field_title:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_youtube:
+    type: media_library_widget
+    weight: 1
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  created: true
+  status: true

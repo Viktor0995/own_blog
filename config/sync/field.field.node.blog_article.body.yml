@@ -1,0 +1,23 @@
+uuid: 32e3f0ee-4221-4a0d-ace0-92e55759e671
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.blog_article
+  module:
+    - text
+id: node.blog_article.body
+field_name: body
+entity_type: node
+bundle: blog_article
+label: Teaser
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary
