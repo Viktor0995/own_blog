@@ -1,0 +1,7 @@
+name: Blog custom functionality
+type: module
+description: Custom functionality for block.
+core: 8.x
+package: blog
+dependencies:
+  - paragraphs:paragraphs
